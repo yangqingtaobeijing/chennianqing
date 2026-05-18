@@ -14,8 +14,10 @@ import Contact from './pages/Contact';
 import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
+  const basename = import.meta.env.BASE_URL.replace(/\/$/, '') || '/';
+
   return (
-    <Router>
+    <Router basename={basename}>
       <ScrollToTop />
       <div className="flex flex-col min-h-screen bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-vibrant-orange selection:text-cloud-white">
         <Navbar />
