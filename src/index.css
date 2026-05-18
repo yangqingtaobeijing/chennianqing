@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cloud-white: #FFFFFF;
+  --color-background: #fbf9f8;
+  --color-inverse-primary: #ffb693;
+  --color-surface-tint: #a04100;
+  --color-on-tertiary-fixed: #002117;
+  --color-tertiary-container: #78a290;
+  --color-on-background: #1b1c1c;
+  --color-primary-fixed-dim: #ffb693;
+  --color-vibrant-orange: #FF6B00;
+  --color-on-tertiary-fixed-variant: #264e40;
+  --color-surface-bright: #fbf9f8;
+  --color-on-surface: #1b1c1c;
+  --color-on-primary: #ffffff;
+  --color-on-primary-fixed-variant: #7a3000;
+  --color-outline: #8e7164;
+  --color-slate-gray: #4A4A4A;
+  --color-on-surface-variant: #5a4136;
+  --color-forest-green: #2D9356;
+  --color-surface-container: #f0eded;
+  --color-on-tertiary: #ffffff;
+  --color-on-secondary-container: #00743d;
+  --color-tertiary-fixed-dim: #a5d0bd;
+  --color-on-secondary: #ffffff;
+  --color-deep-earth: #1A4335;
+  --color-error-container: #ffdad6;
+  --color-on-secondary-fixed-variant: #005229;
+  --color-surface-container-highest: #e4e2e1;
+  --color-secondary: #006d39;
+  --color-secondary-container: #94f8b0;
+  --color-on-secondary-fixed: #00210d;
+  --color-inverse-surface: #303030;
+  --color-on-primary-container: #572000;
+  --color-surface-variant: #e4e2e1;
+  --color-on-error-container: #93000a;
+  --color-surface-dim: #dcd9d9;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-primary-fixed: #351000;
+  --color-secondary-fixed-dim: #78db96;
+  --color-on-error: #ffffff;
+  --color-surface-container-low: #f6f3f2;
+  --color-primary-fixed: #ffdbcc;
+  --color-surface: #fbf9f8;
+  --color-primary-container: #ff6b00;
+  --color-outline-variant: #e2bfb0;
+  --color-surface-container-high: #eae8e7;
+  --color-inverse-on-surface: #f3f0f0;
+  --color-tertiary-fixed: #c0ecd8;
+  --color-tertiary: #3e6657;
+  --color-error: #ba1a1a;
+  --color-primary: #a04100;
+  --color-on-tertiary-container: #0d382b;
+  --color-secondary-fixed: #94f8b0;
+
+  --spacing-margin-mobile: 16px;
+  --spacing-margin-desktop: 64px;
+  --spacing-max-width: 1280px;
+  --spacing-gutter: 24px;
+  --spacing-unit: 8px;
+
+  --font-headline-md: Chivo, sans-serif;
+  --font-label-bold: "Plus Jakarta Sans", sans-serif;
+  --font-headline-lg: Chivo, sans-serif;
+  --font-body-lg: "Plus Jakarta Sans", sans-serif;
+  --font-headline-lg-mobile: Chivo, sans-serif;
+  --font-headline-xl: Chivo, sans-serif;
+  --font-body-md: "Plus Jakarta Sans", sans-serif;
+
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 1.3;
+  --text-headline-md--font-weight: 700;
+  
+  --text-label-bold: 14px;
+  --text-label-bold--line-height: 1.2;
+  --text-label-bold--font-weight: 700;
+  
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 1.2;
+  --text-headline-lg--font-weight: 700;
+  
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 1.6;
+  --text-body-lg--font-weight: 400;
+  
+  --text-headline-lg-mobile: 28px;
+  --text-headline-lg-mobile--line-height: 1.2;
+  --text-headline-lg-mobile--font-weight: 700;
+  
+  --text-headline-xl: 48px;
+  --text-headline-xl--line-height: 1.1;
+  --text-headline-xl--letter-spacing: -0.02em;
+  --text-headline-xl--font-weight: 800;
+  
+  --text-body-md: 16px;
+  --text-body-md--line-height: 1.6;
+  --text-body-md--font-weight: 400;
+}
+
+@layer utilities {
+  .topo-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23e0e0e0' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  }
+
+  .clip-diagonal {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+
+  .topography-bg {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0c27.5 0 50 22.5 50 50s22.5 50 50 50v100H0V0z' fill='none' stroke='%23E0E0E0' stroke-width='1' opacity='0.5'/%3E%3C/svg%3E");
+    background-size: 100px 100px;
+  }
+}
