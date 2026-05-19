@@ -7,7 +7,11 @@ export default function Footer() {
         {/* Brand Column */}
         <div className="flex flex-col gap-4 col-span-1 md:col-span-2">
           <div className="flex items-center gap-2">
-            <span className="material-symbols-outlined text-cloud-white" style={{fontVariationSettings: "'FILL' 1", fontSize: "28px"}}>landscape</span>
+            <img
+              src={`${import.meta.env.BASE_URL}favicon.png`}
+              alt="北京趁年轻户外"
+              className="h-10 w-10 rounded-full object-cover"
+            />
             <span className="text-2xl font-bold font-headline-md text-cloud-white">北京趁年轻户外</span>
           </div>
           <p className="text-cloud-white/80 font-body-md text-sm max-w-sm">

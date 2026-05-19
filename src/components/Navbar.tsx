@@ -19,7 +19,11 @@ export default function Navbar() {
       <div className="flex justify-between items-center px-4 md:px-16 w-full max-w-7xl mx-auto h-20">
         {/* Brand Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <span className="material-symbols-outlined text-vibrant-orange dark:text-inverse-primary" style={{fontVariationSettings: "'FILL' 1", fontSize: "28px"}}>landscape</span>
+          <img
+            src={`${import.meta.env.BASE_URL}favicon.png`}
+            alt="北京趁年轻户外运动"
+            className="h-10 w-10 rounded-full object-cover"
+          />
           <span className="text-2xl font-bold font-headline-md text-vibrant-orange dark:text-inverse-primary hidden md:block">
             北京趁年轻户外运动
           </span>
