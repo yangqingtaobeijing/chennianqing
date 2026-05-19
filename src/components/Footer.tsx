@@ -6,11 +6,11 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 px-4 md:px-16 py-20 w-full max-w-7xl mx-auto">
         {/* Brand Column */}
         <div className="flex flex-col gap-4 col-span-1 md:col-span-2">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <img
               src={`${import.meta.env.BASE_URL}favicon.png`}
               alt="北京趁年轻户外"
-              className="h-10 w-10 rounded-full object-cover"
+              className="h-11 w-11 rounded-full object-cover ring-1 ring-cloud-white/20"
             />
             <span className="text-2xl font-bold font-headline-md text-cloud-white">北京趁年轻户外</span>
           </div>

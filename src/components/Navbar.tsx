@@ -18,16 +18,16 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 bg-cloud-white dark:bg-background shadow-sm w-full transition-all duration-300">
       <div className="flex justify-between items-center px-4 md:px-16 w-full max-w-7xl mx-auto h-20">
         {/* Brand Logo */}
-        <Link to="/" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-3">
           <img
             src={`${import.meta.env.BASE_URL}favicon.png`}
             alt="北京趁年轻户外运动"
-            className="h-10 w-10 rounded-full object-cover"
+            className="h-11 w-11 rounded-full object-cover ring-1 ring-surface-variant"
           />
-          <span className="text-2xl font-bold font-headline-md text-vibrant-orange dark:text-inverse-primary hidden md:block">
+          <span className="text-2xl font-bold font-headline-md text-deep-earth dark:text-inverse-primary hidden md:block">
             北京趁年轻户外运动
           </span>
-          <span className="text-xl font-bold font-headline-md text-vibrant-orange dark:text-inverse-primary block md:hidden">
+          <span className="text-xl font-bold font-headline-md text-deep-earth dark:text-inverse-primary block md:hidden">
             趁年轻户外
           </span>
         </Link>
